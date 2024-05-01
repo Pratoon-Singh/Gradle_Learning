@@ -4,3 +4,22 @@
  * This is a general purpose Gradle build.
  * To learn more about Gradle by exploring our Samples at https://docs.gradle.org/8.7/samples
  */
+plugins{
+    java
+}
+
+tasks.named<Jar>("jar"){
+    manifest{
+        attributes["Main-Class"] = "com.gradle.java.SayHello"
+    }
+}
+
+repositories{
+    mavenCentral();
+}
+dependencies{
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
+}
+tasks.named<Test>("test"){
+    useJUnitPlatform()
+}
