@@ -10,23 +10,23 @@
 - To Run Tests:- `./gradlew test`
 
 ---
-## 3 diffrences in kotlin and java
+## 3 differences in kotlin and java
 
 * Kotlin is a scripting language running in jvm*
-1.) Semicolons are optional in Kotlin
+1. Semicolons are optional in Kotlin
   `
     val name = "Bob"
     println(name)
         Output:- Bob
 `
-2.) String supports interpolation by default
+ 2. String supports interpolation by default
 
 `
   var name = "Bob"
     println("His name is ${name}"
         Output :- His name is Bob
 `
-3.) val is for read only variables and var for mutable variable
+3. val is for read only variables and var for mutable variable
  `
     var mutableName = "Bob V2"
     mutableName = "Bob v1"
