@@ -6,6 +6,7 @@
  */
 plugins{
     java
+
 }
 
 tasks.named<Jar>("jar"){
